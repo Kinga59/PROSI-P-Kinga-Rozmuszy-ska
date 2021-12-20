@@ -1,0 +1,14 @@
+body{
+
+
+	background-image: url("tlo.png");
+  	background-repeat: repeat;
+  	background-size:  100%;
+
+ /* 	background: rgb(52,125,205);
+background: linear-gradient(53deg, rgba(52,125,205,1) 0%, rgba(131,212,255,1) 51%, rgba(154,229,241,1) 100%);
+*/
+}
+div{
+	height:  2000px;
+}
