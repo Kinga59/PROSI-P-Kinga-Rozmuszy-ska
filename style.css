@@ -6,31 +6,48 @@ body{
 	background-image: url("tlo.png");
   	background-repeat: repeat;
   	background-size:  100%;
+  	overflow-x:  hidden;
+  	padding:  0px;
+	font-size: 24px;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-align: justify;
 
 }
 
+#header {
+	position:  fixed;
+	top: 10px;
+	width: 100%;
+	z-index: 7;
+	font-size: 18px;
+}
 .nawigacja {
-	position: sticky;
-	top:  0;
-/*	left: 0%;
-	top:  0%;*/
-/*	white-space: nowrap;
-	overflow: hidden;*/
+	position: relative;
+	top:  -10px;
+	left:  -10px;
+	/*background-color: red;*/
 }
 .nawigacjaContent{
+	text-align:  center;
 	display:  none;
+	width:  110%;
 }
-
 .nawigacja:hover .nawigacjaContent{
 	display: block;
+	background-color: white;
 }
 .nawiIco{
 	position:  relative;
-	left:  50%;
+	left:  49%;
 	display:  block;
-	/*height: 20px;
-	width:  20px;
-	background-color: red;*/
+	width: 24px;
+	height: 30px;
+	background-color: white;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	padding-left: 6px;
+	padding-right:  4px;
+
 }
 .gg-push-chevron-down {
     box-sizing: border-box;
@@ -62,7 +79,7 @@ body{
     border-right: 2px solid;
     transform: rotate(45deg);
     left: 4px;
-    top: 2px
+	top: 2px
 }
 
 
@@ -70,41 +87,201 @@ body{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-left: 8%;
   overflow: hidden;
+ /* background-color: red;*/
 }
 
 .nawigacja ul li {
   float: left;
+  width: 15%;
 }
 .nawigacja ul li a {
   display: block;
   padding: 8px;
-  background-color: #dddddd;
-  /*width:  300%;*/
+  background-color: white;
+  width:  100%;
+  color:  black;
 
 }
-
-.lewy{
-	position:  relative;
-	left: 0%;
-	top:  0%;
+@media only screen and (max-width:  859px){
+	body{
+		background-color: red;
+	}
+	img{
+		width:  100%;
+	}
 }
-.prawy{
-	position: relative;
-	top: -90%;
-	left: 50%;
-}
-.lewy,.prawy{
-	padding: 0px 10px 0px 10px;
+@media only screen and (min-width:  860px){
+	img{
+		object-fit: cover;
+	}
+	.tytul{
+		height: 100%;
+	}
+	.lewy{
+		position:  relative;
+		left: 0%;
+		top:  0%;
+	}
+	.prawy{
+		position: relative;
+		top: -85%;
+		left: 52%;
+	}
+	.lewy,.prawy{
+		padding: 0px 10px 0px 10px;
 
-	width:  45%;
-	height: 90%;
-}
-.sekcja{
+		width:  48%;
+		height: 85%;
+		margin:  0px;
+	}
+	.sekcja{
+		position: relative;
+		top:  0%;
+		height:  94%;
+		width: 96%;
+		/*border-style: dotted;*/
+		padding:  2%;
+	}
 
-	
-	position: relative;
-	top:  100%;
-	height:  100%;
-	width: 100%;
+	h1{
+		font-size: 400%;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	.tytul h1{
+		font-size:  220px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		padding-top: 10%;
+		color: white;
+	}
+	.tytul h1:nth-child(2){
+		color: black;
+		margin-top: 0px;
+		padding-top:  0px;
+	}
+	.sekcja1{
+		position: relative;
+		top: 0%;
+		padding-top: 6%;
+	}
+	.sekcja1 h1{
+		font-size: 350%;
+	}
+
+
+	.sekcja2{
+		font-size: 23px;
+	}
+	.sekcja2 h1{
+		text-align: center;
+	}
+	.sekcja2 h1:nth-child(2){
+		margin-top: 0px;
+		text-align: left;
+		position: relative;
+		left: 52%;
+		font-size: 350%;
+	}
+	.sekcja2 .prawy img{
+		width: 90%;
+	}
+	.sekcja2 .lewy{
+		padding-left: 35px;
+		position:  relative;
+		top:  -12%;
+	}
+
+	.sekcja3 .lewy,.sekcja3 .prawy{
+		height: 97%;
+	}
+	.sekcja3 .prawy{
+		
+		top: -97%;
+	}
+	.sekcja3 .lewy{
+		margin-top: 1%;
+		width: 48%;
+	}
+	.sekcja3 img{
+		width: 100%;
+	}
+	.sekcja3 .lewy img{
+		height: 100%;
+	}
+	.sekcja3 .prawy img{
+		height: 40%;
+	}
+	.sekcja3 .prawy .dol{
+		height: 60%;
+	}
+	.sekcja3 .prawy .dol .lewy{
+		width: 47%;
+		height:  93.5%;
+		padding-right: 0px;
+		padding-left: 0px;
+		padding-top: 3%;
+	}
+
+	.sekcja3 .prawy .dol .prawy{
+		width: 47%;
+		height: 93.5%;
+		position:  relative;
+		left:  53%;
+		top: -93.5%;
+		padding-left: 0px;
+	}
+	.sekcja3 .prawy .dol .lewy img{
+		height:  100%;
+	}
+	.sekcja3 .prawy .dol .prawy img{
+		height:  100%;
+	}
+
+	.sekcja4 .gora{
+		height:  60%;
+	}
+	.sekcja4 .gora img{
+		height: 100%;
+		width: 100%;
+	}
+	.sekcja4 .dol{
+		height:  40%;
+		padding-top:  1%;
+	}
+
+	.sekcja4 .dol .lewy{
+		height:  100%;
+
+	}
+
+	.sekcja4 .dol .prawy{
+		position: relative;
+		top:  -100%;
+		/*left:  50%;
+		width: 50%;*/
+		height:  100%;
+		padding-left:  0px;
+	}
+	footer{
+		height:  200px;
+		width: 102%;
+		position: relative;
+		left: -1%;
+		background-color: white;
+		font-size: 13px;
+	}
+	footer .lewy, footer .prawy{
+		width: 45%;
+	}
+	footer .lewy{
+		padding-left: 5%;
+		padding-top: 10px;
+		
+	}
+
 }
