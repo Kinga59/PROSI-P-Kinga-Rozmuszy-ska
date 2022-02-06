@@ -8,18 +8,24 @@ body{
   	background-size:  100%;
   	overflow-x:  hidden;
   	padding:  0px;
-	font-size: 24px;
+	font-size: 1.5em;
 	font-family: 'Trebuchet MS', sans-serif;
 	text-align: justify;
-
 }
 
+article{
+	height: 100%;
+	width:  100%;
+}
 #header {
-	position:  fixed;
+	position: fixed;
 	top: 10px;
 	width: 100%;
 	z-index: 7;
-	font-size: 18px;
+	font-size: 1.6vw;
+}
+#tytul1 {
+	text-align: left;	
 }
 .nawigacja {
 	position: relative;
@@ -31,11 +37,11 @@ body{
 	text-align:  center;
 	display:  none;
 	width:  110%;
-}
-.nawigacja:hover .nawigacjaContent{
-	display: block;
 	background-color: white;
 }
+/*.nawigacja:hover .nawigacjaContent{
+	display: block;
+}*/
 .nawiIco{
 	position:  relative;
 	left:  49%;
@@ -104,15 +110,32 @@ body{
   color:  black;
 
 }
-@media only screen and (max-width:  859px){
+@media  (max-width:  859px){
 	body{
 		background-color: red;
+		width: 98vw;
+		font-size: 0.95em;
+		text-align: left;
 	}
 	img{
+		width:  98%;
+	}
+	#header{
+		position:  relative;
+		/*top: 0px;*/
+		left: 0px;
+		top: 700px;
+		width: 100%;
+		height: 10px;
+	}
+	.nawigacja {
+		position: fixed;
+		top: 0px;
+		left: 0px;
 		width:  100%;
 	}
 }
-@media only screen and (min-width:  860px){
+@media (min-width:  860px){
 	img{
 		object-fit: cover;
 	}
@@ -152,8 +175,9 @@ body{
 		margin-top: 0px;
 	}
 
+
 	.tytul h1{
-		font-size:  220px;
+		font-size:  15vw;
 		padding-bottom: 0px;
 		margin-bottom: 0px;
 		padding-top: 10%;
@@ -175,7 +199,7 @@ body{
 
 
 	.sekcja2{
-		font-size: 23px;
+		font-size: 1.5vw;
 	}
 	.sekcja2 h1{
 		text-align: center;

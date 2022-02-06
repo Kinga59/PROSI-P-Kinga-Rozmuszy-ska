@@ -4,11 +4,27 @@
 	<meta charset = "utf-8">
 	<title>Projekt</title>
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		var menuRozwiniete = 0;
+		var nawigacja;
+		function menu(){
+			if(menuRozwiniete == 1){
+				document.getElementById("nawigacjaContent").style.display = "none";
+				menuRozwiniete = 0;
+			}
+			else{
+				document.getElementById("nawigacjaContent").style.display = "block";
+				menuRozwiniete = 1;
+			}
+		}
+	</script>
 </head>
 <body>
+	
 	<div id="header">
-		<div class = "nawigacja">
-			<ul class = "nawigacjaContent">
+		<div class = "nawigacja" onclick = "menu()">
+			<ul class = "nawigacjaContent" id="nawigacjaContent">
 				<li><a href ="#s1">Przesadzanie</a></li>
 				<li><a href ="#s2">Podlewanie</a></li>
 				<li><a href ="#s3">Galeria</a></li>
@@ -26,24 +42,28 @@
 			DONICZKOWE
 		</h1>
 	</div>
-	<div class="sekcja sekcja1" id ="s1">
-		<h1> Przesadzanie</h1>
-		<div class="lewy">Istotnym zabiegiem w uprawie roślin doniczkowych w domu jest ich systematyczne przesadzanie lub wymiana podłoża. Roślina rosnąc zwiększa swoje rozmiary nad ziemią, zwiększa się również ilość korzeni w podłożu. Niewystarczająca ilość miejsca w doniczce może powodować zahamowanie wzrostu lub nawet obumarcie rośliny. Najlepszym momentem na przesadzanie jest wiosna. Rośliny wznawiają wtedy wegetację i lepiej znoszą takie zabiegi. Pamiętajmy aby nie przesadzać roślin kwitnących i owocujących. Przystępując do przesadzania przygotujmy sobie odpowiednio dużą doniczkę. Najlepiej 2 – 4 cm większą od poprzedniej. Ważne żeby miała otwory w dnie, które pozwolą na odpływ nadmiaru wody.<br>Przy bardzo dużych roślinach przygotujmy doniczkę, która proporcjonalnie do niej pasuje. Kolejną potrzebną rzeczą jest podłoże dostosowane do wymagań danej rośliny oraz kamyczki, potłuczone doniczki czy keramzyt, które wykorzystamy jako drenaż.</div>
-		<div class = "prawy"> Przesadzając roślinę można wzbogacić podłoże w nawóz długodziałający lub hydrożel, który na dłużej zatrzyma wilgoć w podłożu. Przed przesadzaniem roślinę należy podlać. Ułatwi to nam bezpieczne wyjęcie rośliny z doniczki. Jeśli zauważymy, że korzenie rośliny są poskręcane – należy je rozprostować. Zbyt długie, uszkodzone lub uschnięte korzenie należy obciąć. Na dnie nowej doniczki należy ułożyć warstwę drenującą, następnie nasypać nowego podłoża. Roślinę sadzimy tak, aby rosła na tej samej wysokości co poprzednio. Po posadzeniu roślinę należy podlać. Pozwoli to na pozbycie się przestrzeni powietrznych wokół korzeni. Bezpośrednio po przesadzaniu roślin nie nawozimy. Poczekajmy ok miesiąca, aż roślina zregeneruje się po zabiegu.</div>
-	</div>
-	<div class="sekcja sekcja2" id="s2">
-		<h1>PODLEWANIE ROŚLIN</h1>	
-		<h1>DONICZKOWYCH</h1>
-		<div class="lewy">
-		Oprócz dostarczania roślinie odpowiedniej ilości światła, musimy również zapewnić jej odpowiednią ilość wody dostosowaną do jej zapotrzebowania. Do podlewania roślin najlepiej nadaje się odstana woda w temperaturze pokojowej. Woda powoduje, że roślina może rosnąć i się rozwijać, jednak jej nadmiar nie jest wskazany. Częstotliwość podlewania zależy od wymagań rośliny, od wielkości doniczki, w której roślina rośnie oraz od temperatury panującej w pomieszczeniu. Im więcej liści tym szybciej woda przez nie transpiruje i tym więcej wody roślina potrzebuje. Również wysoka temperatura i niska wilgotność powietrza w pomieszczeniu powoduje zwiększone zapotrzebowanie na wodę. Jeśli po podlaniu woda wycieknie na podstawkę, należy ją zlać. Nadmiar wody może powodować gnicie korzeni. U rośliny, która została przelana można zauważyć zasychające końcówki liści lub nawet całych liści. Nadmiar wody może również doprowadzić do obumarcia całej rośliny. Istotna jest również pora dnia, kiedy podlewamy rośliny. Najlepiej robić to rano. Jeśli rośliny stoją na parapecie unikajmy podlewania ich w momencie największego nasłonecznienia.
-		</div>
-		<div class="prawy">
-			<img src="obrazy/podlewanie-roslin.jpg">
-		</div>
-	</div>
+	<section class="sekcja sekcja1" id ="s1">
+		<article>
+			<h1> Przesadzanie</h1>
+			<div class="lewy">Istotnym zabiegiem w uprawie roślin doniczkowych w domu jest ich systematyczne przesadzanie lub wymiana podłoża. Roślina rosnąc zwiększa swoje rozmiary nad ziemią, zwiększa się również ilość korzeni w podłożu. Niewystarczająca ilość miejsca w doniczce może powodować zahamowanie wzrostu lub nawet obumarcie rośliny. Najlepszym momentem na przesadzanie jest wiosna. Rośliny wznawiają wtedy wegetację i lepiej znoszą takie zabiegi. Pamiętajmy aby nie przesadzać roślin kwitnących i owocujących. Przystępując do przesadzania przygotujmy sobie odpowiednio dużą doniczkę. Najlepiej 2 – 4 cm większą od poprzedniej. Ważne żeby miała otwory w dnie, które pozwolą na odpływ nadmiaru wody.<br>Przy bardzo dużych roślinach przygotujmy doniczkę, która proporcjonalnie do niej pasuje. Kolejną potrzebną rzeczą jest podłoże dostosowane do wymagań danej rośliny oraz kamyczki, potłuczone doniczki czy keramzyt, które wykorzystamy jako drenaż.</div>
+			<div class = "prawy"> Przesadzając roślinę można wzbogacić podłoże w nawóz długodziałający lub hydrożel, który na dłużej zatrzyma wilgoć w podłożu. Przed przesadzaniem roślinę należy podlać. Ułatwi to nam bezpieczne wyjęcie rośliny z doniczki. Jeśli zauważymy, że korzenie rośliny są poskręcane – należy je rozprostować. Zbyt długie, uszkodzone lub uschnięte korzenie należy obciąć. Na dnie nowej doniczki należy ułożyć warstwę drenującą, następnie nasypać nowego podłoża. Roślinę sadzimy tak, aby rosła na tej samej wysokości co poprzednio. Po posadzeniu roślinę należy podlać. Pozwoli to na pozbycie się przestrzeni powietrznych wokół korzeni. Bezpośrednio po przesadzaniu roślin nie nawozimy. Poczekajmy ok miesiąca, aż roślina zregeneruje się po zabiegu.</div>
+		</article>
+	</section>
+	<section class="sekcja sekcja2" id="s2">
+		<article>
+			<h1>PODLEWANIE ROŚLIN</h1>	
+			<h1>DONICZKOWYCH</h1>
+			<div class="lewy">
+			Oprócz dostarczania roślinie odpowiedniej ilości światła, musimy również zapewnić jej odpowiednią ilość wody dostosowaną do jej zapotrzebowania. Do podlewania roślin najlepiej nadaje się odstana woda w temperaturze pokojowej. Woda powoduje, że roślina może rosnąć i się rozwijać, jednak jej nadmiar nie jest wskazany. Częstotliwość podlewania zależy od wymagań rośliny, od wielkości doniczki, w której roślina rośnie oraz od temperatury panującej w pomieszczeniu. Im więcej liści tym szybciej woda przez nie transpiruje i tym więcej wody roślina potrzebuje. Również wysoka temperatura i niska wilgotność powietrza w pomieszczeniu powoduje zwiększone zapotrzebowanie na wodę. Jeśli po podlaniu woda wycieknie na podstawkę, należy ją zlać. Nadmiar wody może powodować gnicie korzeni. U rośliny, która została przelana można zauważyć zasychające końcówki liści lub nawet całych liści. Nadmiar wody może również doprowadzić do obumarcia całej rośliny. Istotna jest również pora dnia, kiedy podlewamy rośliny. Najlepiej robić to rano. Jeśli rośliny stoją na parapecie unikajmy podlewania ich w momencie największego nasłonecznienia.
+			</div>
+			<div class="prawy">
+				<img src="obrazy/podlewanie-roslin.jpg">
+			</div>
+		</article>
+	</section>
 
 
-	<div class="sekcja sekcja3" id="s3">
+	<section class="sekcja sekcja3" id="s3">
 		<div class="lewy">
 		<img src="obrazy/roslina1.gif">
 		</div>
@@ -60,39 +80,46 @@
 			</div>
 		</div>
 
-	</div>
+	</section>
 
-	<div class="sekcja sekcja1" id ="s4">
-		<h1>Nawozy do roślin doniczkowych</h1>
-		<div class="lewy">Rośliny czerpią wszystkie substancje odżywcze z podłoża. Rośliny doniczkowe mają ograniczoną ilość ziemi w doniczce, dlatego tak ważne jest, aby dostarczać im składniki mineralne. Ponieważ rośliny maja różne wymagania, nawożenie musimy dostosować do poszczególnej grupy roślin. Najlepiej wybrać preparat przeznaczony do konkretnej rośliny. Innego nawożenia wymagają storczyki, innego kaktusy, a jeszcze innego paprocie. Oprócz tego dla jakiej rośliny przeznaczony jest dany nawóz zwróćmy również uwagę na jego formę. I tak nawozy płynne przeznaczone dla konkretnej grupy roślin rozcieńczamy wodą zgodnie z zaleceniami producenta. Zastosowanie takiego nawozu daje szybki efekt np. w postaci lepszego wybarwienia liści, czy większej ilości zawiązanych kwiatów. Poprawia również ogólną formę rośliny. Podobnie działają nawozy krystaliczne, które również należy rozpuścić w wodzie i takim roztworem podlać roślinę, dla której dany nawóz jest przeznaczony.</div>
-		<div class = "prawy"> Nawozy te należy stosować systematycznie, aby roślina miała stały dostęp do składników odżywczych i prawidłowo się rozwijała. Występują również nawozy w formie stałej. Możemy kupić nawozy długodziałające w postaci granulek, które miesza się z wierzchnią warstwą ziemi w doniczce lub stosuje się je w czasie przesadzania rośliny. Granulki nawozu długodziałającego mogą być ze sobą posklejane tworząc charakterystyczne koreczki. Nawozy te uwalniają swoją zawartość pod wpływem wody i temperatury, a roślina może pobierać składniki pokarmowe nawet do 4 miesięcy od aplikacji. Podobne działanie mają również pałeczki nawozowe, które dodatkowo mogą być wzbogacone w środki przeciw szkodnikom roślin. Innym sposobem dostarczenia roślinie składników mineralnych są nawozy stosowane dolistnie. Rośliny, które znoszą moczenie liści możemy spryskiwać odpowiednio rozcieńczonym nawozem. </div>
-	</div>
+	<section class="sekcja sekcja1" id ="s4">
+		<article>
+			<h1 id="tytul1">Nawozy do roślin doniczkowych</h1>
+			<div class="lewy">Rośliny czerpią wszystkie substancje odżywcze z podłoża. Rośliny doniczkowe mają ograniczoną ilość ziemi w doniczce, dlatego tak ważne jest, aby dostarczać im składniki mineralne. Ponieważ rośliny maja różne wymagania, nawożenie musimy dostosować do poszczególnej grupy roślin. Najlepiej wybrać preparat przeznaczony do konkretnej rośliny. Innego nawożenia wymagają storczyki, innego kaktusy, a jeszcze innego paprocie. Oprócz tego dla jakiej rośliny przeznaczony jest dany nawóz zwróćmy również uwagę na jego formę. I tak nawozy płynne przeznaczone dla konkretnej grupy roślin rozcieńczamy wodą zgodnie z zaleceniami producenta. Zastosowanie takiego nawozu daje szybki efekt np. w postaci lepszego wybarwienia liści, czy większej ilości zawiązanych kwiatów. Poprawia również ogólną formę rośliny. Podobnie działają nawozy krystaliczne, które również należy rozpuścić w wodzie i takim roztworem podlać roślinę, dla której dany nawóz jest przeznaczony.</div>
+			<div class = "prawy"> Nawozy te należy stosować systematycznie, aby roślina miała stały dostęp do składników odżywczych i prawidłowo się rozwijała. Występują również nawozy w formie stałej. Możemy kupić nawozy długodziałające w postaci granulek, które miesza się z wierzchnią warstwą ziemi w doniczce lub stosuje się je w czasie przesadzania rośliny. Granulki nawozu długodziałającego mogą być ze sobą posklejane tworząc charakterystyczne koreczki. Nawozy te uwalniają swoją zawartość pod wpływem wody i temperatury, a roślina może pobierać składniki pokarmowe nawet do 4 miesięcy od aplikacji. Podobne działanie mają również pałeczki nawozowe, które dodatkowo mogą być wzbogacone w środki przeciw szkodnikom roślin. Innym sposobem dostarczenia roślinie składników mineralnych są nawozy stosowane dolistnie. Rośliny, które znoszą moczenie liści możemy spryskiwać odpowiednio rozcieńczonym nawozem. </div>
+		</article>
+		
+	</section>
 
-	<div class="sekcja sekcja4" id="s5">
-		<div class="gora">
-			<img src="obrazy/nawoz.jpg">
-		</div>
-		<div class="dol">
+	<section class="sekcja sekcja4" id="s5">
+		<article>
+			<div class="gora">
+				<img src="obrazy/nawoz.jpg">
+			</div>
+			<div class="dol">
+				<div class="lewy">
+					Dostępne są także chusteczki, które oprócz tego, że dostarczają substancji odżywczych dbają również o czystość i zdrowy wygląd roślin. Alternatywą dla nawozów mineralnych są nawozy organiczne. Najłatwiejszy w stosowaniu jest biohumus, którym po rozcieńczeniu podlewamy roślinę. Dostępne są również oborniki granulowane, które możemy przemieszać z wierzchnią warstwą ziemi. Nawozy organiczne poprawiają dodatkowo strukturę gleby. Pamiętajmy, aby wszystkie nawozy stosować zgodnie z zaleceniami producenta. 
+				</div>
+				<div class="prawy">
+					Zbyt duże stężenie nawozu lub zbyt intensywne nawożenie może spowodować uszkodzenie korzeni lub liści, a nawet doprowadzić do zamierania całej rośliny. Uprawiając rośliny  w domu pamiętajmy również o tym, że przeważnie w okresie zimowym spowalniają one swój metabolizm. Nawozy przeznaczone do dokarmiania roślin zimą nie mają w składzie azotu (N), żeby nie pobudzać ich do wzrostu. Zawierają głównie potas, fosfor i mikroelementy, które wpływają na dobrą kondycję kwiatów doniczkowych.
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<section class="sekcja sekcja2" id="s6">
+		<article>
+			<h1>CZYSZCZENIE</h1>	
+			<h1>I PIELĘGNACJA</h1>
 			<div class="lewy">
-				Dostępne są także chusteczki, które oprócz tego, że dostarczają substancji odżywczych dbają również o czystość i zdrowy wygląd roślin. Alternatywą dla nawozów mineralnych są nawozy organiczne. Najłatwiejszy w stosowaniu jest biohumus, którym po rozcieńczeniu podlewamy roślinę. Dostępne są również oborniki granulowane, które możemy przemieszać z wierzchnią warstwą ziemi. Nawozy organiczne poprawiają dodatkowo strukturę gleby. Pamiętajmy, aby wszystkie nawozy stosować zgodnie z zaleceniami producenta. 
+			Rośliny, które znajdują się w pomieszczeniach pokrywają się systematycznie kurzem. Kurz ten pokrywa liście, przez co rośliny tracą swoją dekoracyjność oraz ogranicza dostęp do światła, przez co spowolniona zostaje fotosynteza. Dlatego tak ważne jest, aby utrzymywać liście roślin w czystości. W zależności od rośliny możemy czyścić liście wilgotną szmatką lub specjalnymi chusteczkami, które nasączone są dodatkowo nawozem. Taki zabieg możemy przeprowadzać jednak jedynie u roślin, które mają duże, błyszczące liście. Rośliny z drobnymi liśćmi najlepiej umieścić jest pod prysznicem. Należy jedynie pamiętać, żeby ustawić delikatny strumień letniej wody i żeby zabezpieczyć doniczkę przed przelaniem rośliny. Istnieją również rośliny, które nie tolerują wody na powierzchni liści. Rośliny te pokryte są delikatnymi włoskami, tzw. kutnerem. Aby pozbyć się kurzu z powierzchni tych liści najlepiej zastosować miękki pędzelek. Aby wzmocnić dekoracyjny efekt roślin o dużych liściach można zastosować nabłyszczacz.<BR>
+			Podczas czyszczenia roślin warto się im przyjrzeć i usunąć przekwitnięte pędy, uschnięte liście. Czasami warto również przyciąć roślinę, co pobudzi ją do wzrostu lub ograniczy nadmiernie wybujałe pędy.
 			</div>
 			<div class="prawy">
-				Zbyt duże stężenie nawozu lub zbyt intensywne nawożenie może spowodować uszkodzenie korzeni lub liści, a nawet doprowadzić do zamierania całej rośliny. Uprawiając rośliny  w domu pamiętajmy również o tym, że przeważnie w okresie zimowym spowalniają one swój metabolizm. Nawozy przeznaczone do dokarmiania roślin zimą nie mają w składzie azotu (N), żeby nie pobudzać ich do wzrostu. Zawierają głównie potas, fosfor i mikroelementy, które wpływają na dobrą kondycję kwiatów doniczkowych.
+				<img src="obrazy/pielengnacja-roslin.jpg">
 			</div>
-		</div>
-	</div>
-
-	<div class="sekcja sekcja2" id="s6">
-		<h1>CZYSZCZENIE</h1>	
-		<h1>I PIELĘGNACJA</h1>
-		<div class="lewy">
-		Rośliny, które znajdują się w pomieszczeniach pokrywają się systematycznie kurzem. Kurz ten pokrywa liście, przez co rośliny tracą swoją dekoracyjność oraz ogranicza dostęp do światła, przez co spowolniona zostaje fotosynteza. Dlatego tak ważne jest, aby utrzymywać liście roślin w czystości. W zależności od rośliny możemy czyścić liście wilgotną szmatką lub specjalnymi chusteczkami, które nasączone są dodatkowo nawozem. Taki zabieg możemy przeprowadzać jednak jedynie u roślin, które mają duże, błyszczące liście. Rośliny z drobnymi liśćmi najlepiej umieścić jest pod prysznicem. Należy jedynie pamiętać, żeby ustawić delikatny strumień letniej wody i żeby zabezpieczyć doniczkę przed przelaniem rośliny. Istnieją również rośliny, które nie tolerują wody na powierzchni liści. Rośliny te pokryte są delikatnymi włoskami, tzw. kutnerem. Aby pozbyć się kurzu z powierzchni tych liści najlepiej zastosować miękki pędzelek. Aby wzmocnić dekoracyjny efekt roślin o dużych liściach można zastosować nabłyszczacz.<BR>
-		Podczas czyszczenia roślin warto się im przyjrzeć i usunąć przekwitnięte pędy, uschnięte liście. Czasami warto również przyciąć roślinę, co pobudzi ją do wzrostu lub ograniczy nadmiernie wybujałe pędy.
-		</div>
-		<div class="prawy">
-			<img src="obrazy/pielengnacja-roslin.jpg">
-		</div>
-	</div>
+		</article>
+	</section>
 	<footer>
 		<div class="lewy">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales porttitor lectus sit amet rutrum. Praesent sagittis mi eu iaculis sodales. Praesent nec magna quis risus mollis pulvinar a ut tortor. Sed vehicula tortor ac eros ultricies, non volutpat orci mattis. Praesent id venenatis urna, eget pellentesque mi. Duis varius viverra enim vitae suscipit. Praesent at faucibus velit. Curabitur et tristique felis, ut congue sapien. Vivamus eget blandit ipsum, non blandit dui. Donec ut massa porta lorem convallis cursus. Ut auctor nisl at est euismod, in tincidunt ante vestibulum. Aliquam sit amet velit eget tortor mattis fermentum. Vestibulum sit amet mauris vitae augue scelerisque rutrum pulvinar eu urna. Sed et cursus leo. Nullam et suscipit libero.
